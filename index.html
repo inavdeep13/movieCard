@@ -1,99 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Card Hover Effect | devRasen</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
+    <title>Movie Cards - OMDb API</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
     <div class="container">
-      <div class="movie-cards">
-        <div class="card">
-          <img src="assests/poster-1.jpg" alt="poster1" />
-          <div class="content">
-            <h1 class="name">Deadpool & Wolverine</h1>
-            <h3 class="infos">
-              <i class="fa-solid fa-star"></i> 7.5/10 | 2024-07-25 | 128 Min
-            </h3>
-            <p class="short-desc">
-              Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority, but instead recruits a variant of Wolverine to save his universe from extinction.
-            </p>
-            <div class="icons">
-              <a href="#"><i class="fa-solid fa-heart"></i></a>
-              <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-              <a href="#"><i class="fa-solid fa-share"></i></a>
-              <a href="https://youtu.be/73_1biulkYk?si=lhate2Q92fwb803b" target="_blank"><i class="fas fa-play"></i></a>
-            </div>
-          </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search a movie..." />
+            <button onclick="searchMovie()">Search</button>
+
+             <!-- <ul id="recentSearches" class="recent-search-list"></ul> -->
         </div>
+        <div class="movie-cards">
 
-
-        <div class="card">
-          <img src="assests/poster-2.jpg" alt="poster2" />
-          <div class="content">
-            <h1 class="name">Captain America</h1>
-            <h3 class="infos">
-              <i class="fa-solid fa-star"></i> 5.7/10 | 2025-02-14 | 118 Min
-            </h3>
-            <p class="short-desc">
-              Sam Wilson, the new Captain America, finds himself in the middle of an international incident and must discover the motive behind a nefarious global plan.
-            </p>
-            <div class="icons">
-              <a href="#"><i class="fa-solid fa-heart"></i></a>
-              <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-              <a href="#"><i class="fa-solid fa-share"></i></a>
-              <a href="https://youtu.be/1pHDWnXmK7Y?si=HasAUvAjXY2p_oKB" target="_blank"><i class="fas fa-play"></i></a>
-            </div>
-          </div>
         </div>
-
-
-
-        <div class="card">
-          <img src="assests/poster-3.jpg" alt="poster3" />
-          <div class="content">
-            <h1 class="name">Gladiator 2</h1>
-            <h3 class="infos">
-              <i class="fa-solid fa-star"></i> 6.5/10 | 2024-11-15 | 148 Min
-            </h3>
-            <p class="short-desc">
-              After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.
-            </p>
-            <div class="icons">
-              <a href="#"><i class="fa-solid fa-heart"></i></a>
-              <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-              <a href="#"><i class="fa-solid fa-share"></i></a>
-              <a href="https://youtu.be/4rgYUipGJNo?si=ACPl2cQbTyxc_yV4" target="_blank"><i class="fas fa-play"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="card">
-          <img src="assests/poster-4.jpg" alt="poster4" />
-          <div class="content">
-            <h1 class="name">Arrival</h1>
-            <h3 class="infos">
-              <i class="fa-solid fa-star"></i> 7.9/10 | 2016-09-02 | 116 Min
-            </h3>
-            <p class="short-desc">
-              Linguist Louise Banks leads a team of investigators when gigantic spaceships touch down around the world. As nations teeter on the verge of global war, Banks and her crew must find a way to communicate with the extraterrestrial visitors.
-            </p>
-            <div class="icons">
-              <a href="#"><i class="fa-solid fa-heart"></i></a>
-              <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-              <a href="#"><i class="fa-solid fa-share"></i></a>
-              <a href="https://youtu.be/tFMo3UJ4B4g?si=UtTnOBEuiBbKDsL9" target="_blank"><i class="fas fa-play"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </body>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
